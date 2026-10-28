@@ -1,0 +1,10 @@
+services:
+  mini-pg:
+    image: postgres:17
+    container_name: mini-pg
+    environment:
+      POSTGRES_USER: mini
+      POSTGRES_PASSWORD: mini
+      POSTGRES_DB: mini
+    ports:
+      - "15435:5432"
